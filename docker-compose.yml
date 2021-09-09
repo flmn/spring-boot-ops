@@ -1,0 +1,23 @@
+version: "3"
+networks:
+  ops:
+
+services:
+  prometheus:
+    container_name: prometheus
+    image: 'prom/prometheus:latest'
+    volumes:
+      - ./prometheus/:/etc/prometheus/
+    ports:
+      - 9190:9090
+    networks:
+      - ops
+
+  grafana:
+    container_name: grafana
+    image: 'grafana/grafana:latest'
+    ports:
+      - 3100:3000
+    networks:
+      - ops
+    
