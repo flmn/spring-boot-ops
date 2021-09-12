@@ -1,3 +1,10 @@
 spring:
   application:
     name: ops-service
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: metrics,prometheus
