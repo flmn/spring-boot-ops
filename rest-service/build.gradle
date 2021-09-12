@@ -2,15 +2,7 @@ plugins {
     id 'java'
     id 'org.springframework.boot' version '2.5.4'
     id 'io.spring.dependency-management' version '1.0.11.RELEASE'
-    id 'com.palantir.docker' version '0.25.0'
-}
-
-group = 'tech.jitao.ops'
-version = '0.0.1'
-sourceCompatibility = '11'
-
-repositories {
-    mavenCentral()
+    id 'com.palantir.docker'
 }
 
 dependencies {

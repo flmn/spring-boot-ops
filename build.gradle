@@ -2,6 +2,18 @@ plugins {
     id 'com.palantir.docker-compose' version '0.28.0'
 }
 
+subprojects {
+    apply plugin: 'java'
+
+    group = 'tech.jitao.ops'
+    version = '0.0.1'
+    sourceCompatibility = JavaVersion.VERSION_11
+
+    repositories {
+        mavenCentral()
+    }
+}
+
 dockerCompose {
     dockerComposeFile 'docker-compose.yml'
 }
