@@ -35,11 +35,22 @@ services:
     depends_on:
       - prometheus
 
+  bff-service:
+    build: ./bff-service
+    container_name: bff-service
+    image: bff-service:0.0.1
+    ports:
+      - 8180:8080
+    networks:
+      - ops
+    depends_on:
+      - rest-service
+
   rest-service:
     build: ./rest-service
     container_name: rest-service
     image: rest-service:0.0.1
     ports:
-      - 8180:8080
+      - 8181:8080
     networks:
       - ops

@@ -1,6 +1,6 @@
 spring:
   application:
-    name: rest-service
+    name: bff-service
 
 management:
   endpoints:

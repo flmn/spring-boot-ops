@@ -6,6 +6,11 @@ scrape_configs:
     static_configs:
       - targets: [ "localhost:9090" ]
 
+  - job_name: 'bff-service'
+    metrics_path: '/actuator/prometheus'
+    static_configs:
+      - targets: [ 'bff-service:8080' ]
+
   - job_name: 'rest-service'
     metrics_path: '/actuator/prometheus'
     static_configs:
