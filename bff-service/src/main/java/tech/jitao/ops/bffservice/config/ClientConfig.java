@@ -16,6 +16,6 @@ public class ClientConfig {
 
     @Bean
     public WebClient webClient() {
-        return WebClient.builder().build();
+        return WebClient.create();
     }
 }
