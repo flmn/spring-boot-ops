@@ -3,7 +3,7 @@ Accept: application/json
 
 ###
 
-GET http://localhost:8180/api/ping
+GET http://localhost:8181/api/ping
 Accept: application/json
 
 ###
@@ -13,8 +13,16 @@ Accept: application/json
 
 ###
 
-GET http://localhost:8080/actuator/prometheus
+GET http://localhost:8181/actuator
 Accept: application/json
+
+###
+
+GET http://localhost:8080/actuator/prometheus
+
+###
+
+GET http://localhost:8181/actuator/prometheus
 
 ###
 

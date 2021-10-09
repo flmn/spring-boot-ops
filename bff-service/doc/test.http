@@ -8,6 +8,10 @@ Accept: application/json
 
 ###
 
+GET http://localhost:8180/actuator/prometheus
+
+###
+
 GET http://localhost:8080/api/ping
 
 ###
@@ -21,6 +25,14 @@ GET http://localhost:8080/api/rest-template
 
 ###
 
+GET http://localhost:8180/api/rest-template
+
+###
+
 GET http://localhost:8080/api/web-client
+
+###
+
+GET http://localhost:8180/api/web-client
 
 ###
